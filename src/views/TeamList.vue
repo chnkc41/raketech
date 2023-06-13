@@ -1,11 +1,10 @@
 <template>
   <div class="px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
-    <!-- header -->
+    <!-- Header -->
     <header>
       <img
         :src="require('@/assets/images/logo.png')"
         class="mt-5 w-48 mx-auto"
-        contain
       />
     </header>
 

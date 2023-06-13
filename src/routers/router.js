@@ -2,8 +2,7 @@ const routes = [
   {
     name: "HomePage",
     path: "/",
-    // component: HomePage
-    component: () => import("@/views/TeamList"), 
+    component: () => import("@/views/TeamList"),
   },
 ];
 

@@ -12,7 +12,9 @@
     </div>
 
     <div class="text-center">
-      <h1 class="text-base font-semibold leading-6 text-gray-900">Teams list</h1>
+      <h1 class="text-base font-semibold leading-6 text-gray-900">
+        Teams list
+      </h1>
       <p class="mt-2 text-sm text-gray-700">
         A list of all the teams in your account including their name, title,
         email and role.
