@@ -33,26 +33,17 @@
           <div class="w-28">
             <span v-for="(form, index) in team.strForm" :key="index">
               <box-icon
-                name="check-circle"
+                :name="
+                  form === 'W'
+                    ? 'check-circle'
+                    : '' || form === 'L'
+                    ? 'x-circle'
+                    : 'minus-circle'
+                "
                 type="solid"
-                v-show="form === 'W'"
-                color="green"
-                class="w-5"
-              ></box-icon>
-
-              <box-icon
-                name="x-circle"
-                type="solid"
-                v-show="form === 'L'"
-                color="red"
-                class="w-5"
-              ></box-icon>
-
-              <box-icon
-                name="minus-circle"
-                type="solid"
-                v-show="form === 'D'"
-                color="gray"
+                :color="
+                  form === 'W' ? 'green' : '' || form === 'L' ? 'red' : 'gray'
+                "
                 class="w-5"
               ></box-icon>
             </span>
