@@ -35,6 +35,9 @@ Not: Since there is no team players field in the API, a static definition was ma
  ![Desktop-2](/src/assets/images/screenshot-desktop-2.png) 
  ![Mobile](/src/assets/images/screenshot-mobile-1.png) 
 
+##### Update 0.1.1: Added Dark Mode
+
+ ![Desktop](/src/assets/images/screenshot-desktop-3.png) 
 #### Contact details.
 
 > [LinkedIn](https://www.linkedin.com/in/cihankoc/)
