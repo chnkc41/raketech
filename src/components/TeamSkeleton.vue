@@ -14,11 +14,11 @@
 
 <script>
 export default {
-    name: "TeamSkeleton",
-    data() {
-      return {
-        className: "h-8 bg-gray-200 rounded animate-pulse w-7"
-      }
-    },
+  name: "TeamSkeleton",
+  data() {
+    return {
+      className: "h-8 bg-gray-200 rounded animate-pulse w-7",
+    };
+  },
 };
 </script>
