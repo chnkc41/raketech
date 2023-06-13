@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-white dark:bg-slate-950 text-black dark:text-gray-50;
+}
+
 table tr td {
-  @apply px-1.5 sm:px-3 py-2.5 text-sm text-gray-500 text-center;
+  @apply px-1.5 sm:px-3 py-2.5 text-sm text-gray-500 dark:text-gray-300 text-center;
 }
 
 button {
-  @apply rounded-md border border-indigo-50 px-3.5 py-2.5 text-sm font-semibold shadow-sm
+  @apply rounded-md border border-indigo-50 dark:border-gray-800 px-3.5 py-2.5 text-sm font-semibold shadow-sm;
 }
