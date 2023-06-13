@@ -5,7 +5,6 @@
       <img
         :src="require('@/assets/images/logo.png')"
         class="mt-5 w-48 mx-auto"
-        contain
       />
     </header>
 
@@ -29,15 +28,13 @@
           @click="loadMore"
           v-if="limit < 20"
         >
-          Load more...
+          {{loadButtonText}}
         </button>
       </div>
     </main>
   </div>
 </template>
-
-
-
+ 
 <script>
 import TeamSkeleton from "@/components/TeamSkeleton";
 import TeamNames from "@/components/TeamNames";
@@ -60,6 +57,7 @@ export default {
       teamList: [],
       limit: 5,
       increaseLimit: 3,
+      loadButtonText: "Load more..."
     };
   },
 
