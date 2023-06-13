@@ -12,9 +12,10 @@
       <!-- Content -->
       <div class="flex justify-center">
         <TeamNames :teamList="teamList" :limit="limit" />
-        <TeamScores :teamList="teamList" :limit="limit" />
-        <TeamSkeleton v-if="!teamList.length" />
+        <TeamScores :teamList="teamList" :limit="limit" /> 
       </div>
+
+       <TeamSkeleton v-if="!teamList.length" />
        
       <div
         class="flex items-center justify-between text-center my-5"
