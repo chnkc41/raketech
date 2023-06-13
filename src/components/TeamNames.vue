@@ -1,17 +1,22 @@
 <template>
-  <table class="divide-y divide-gray-300" style="min-width: 222px">
+  <table
+    class="divide-y divide-gray-300 dark:divide-gray-700"
+    style="min-width: 222px"
+  >
     <thead>
       <tr>
-        <td scope="col" class="text-center border-r" colspan="2">Teams</td>
+        <td scope="col" class="text-center" colspan="2">Teams</td>
       </tr>
     </thead>
-    <tbody class="divide-y divide-gray-200 bg-white">
+    <tbody
+      class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-slate-900"
+    >
       <tr
         v-for="(team, index) in teamList"
         :key="team.idStanding"
         v-show="index + 1 <= limit"
       >
-        <td class="flex items-center border-r">
+        <td class="flex items-center">
           {{ team.intRank <= 9 ? `0${team.intRank}` : team.intRank }}
 
           <img :src="team?.strTeamBadge" :alt="team.strTeam" class="w-6 mx-3" />

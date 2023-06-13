@@ -1,6 +1,6 @@
 <template>
   <table
-    class="w-full divide-y divide-gray-300 overflow-y-hidden"
+    class="w-full divide-y divide-gray-300 dark:divide-gray-700 overflow-y-hidden"
     style="width: 500px; overflow-x: auto; display: block"
   >
     <thead>
@@ -15,7 +15,7 @@
         </td>
       </tr>
     </thead>
-    <tbody class="divide-y divide-gray-200 bg-white">
+    <tbody class="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-slate-900">
       <tr
         v-for="(team, index) in teamList"
         :key="team.idStanding"
