@@ -1,22 +1,23 @@
 <template>
   <div class="px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+    <!-- header -->
     <header>
-    <img
-      :src="require('@/assets/images/logo.png')"
-      class="mt-5 w-48 mx-auto"
-      contain
-    />
+      <img
+        :src="require('@/assets/images/logo.png')"
+        class="mt-5 w-48 mx-auto"
+        contain
+      />
     </header>
 
     <main class="mt-8 mx-0">
       <!-- Content -->
       <div class="flex justify-center">
         <TeamNames :teamList="teamList" :limit="limit" />
-        <TeamScores :teamList="teamList" :limit="limit" /> 
+        <TeamScores :teamList="teamList" :limit="limit" />
       </div>
 
-       <TeamSkeleton v-if="!teamList.length" />
-       
+      <TeamSkeleton v-if="!teamList.length" />
+
       <div
         class="flex items-center justify-between text-center my-5"
         v-if="teamList.length"
